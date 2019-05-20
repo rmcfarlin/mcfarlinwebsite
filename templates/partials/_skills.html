@@ -1,0 +1,49 @@
+{% load static %}
+
+<div id="skills" class="skillsSection section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="header-spacing">KNOWLEDGE / SKILLS</h1>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="header-spacing">Accounting</h2>
+            </div>
+            <div class="owl-carousel">
+                {% for skill in acct %}
+                <div class="skill">
+                    <span class="chart" data-percent="{{skill.rating}}">
+                        <span class="percent">{{skill.rating}}</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>{{skill.name}}</h4>
+                    <p>{{skill.level}}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="col-md-12 text-center">
+                <h2 class="header-spacing">Development</h2>
+            </div>
+            <div class="owl-carousel">
+
+                {% for skill in devs %}
+                <div class="skill">
+                    <span class="chart" data-percent="{{skill.rating}}">
+                        <span class="percent">{{skill.rating}}</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>{{skill.name}}</h4>
+                    <p>{{skill.level}}</p>
+                </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
