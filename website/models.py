@@ -26,9 +26,19 @@ class Cert(models.Model):
         ('development', 'development'),
         ('analytics', 'analytics'),
         ('software', 'software'),
+        ('automation', 'automation')
         ('development analytics', 'development analytics'),
         ('development software', 'development software'),
+        ('development automation', 'development automation'),
         ('analytics software', 'analytics software'),
+        ('analytics automation', 'analytics automation'),
+        ('software automation', 'software automation'),
+        ('development analytics software', 'development analytics software'),
+        ('development software automation', 'development software automation'),
+        ('development automation analytics', 'development automation analytics'),
+        ('automation analytics software', 'automation analytics software'),
+        ('analytics software automation', 'analytics software automation'),
+        ('development automation analytics software', 'development automation analytics software'),
     )
 
     title = models.CharField(max_length=100)
