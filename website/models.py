@@ -48,3 +48,12 @@ class Cert(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class AboutMe(models.Model):
+
+
+    entry = models.TextField()
+
+    def __str__(self):
+        return self.entry

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Acct, Dev, Cert
+from .models import Acct, Dev, Cert, AboutMe
 from datetime import datetime
 
 
@@ -9,6 +9,7 @@ def index(request):
     certs = Cert.objects.all()
     year = datetime.now().year
     yearAcct = year-2011
+    aboutMe = AboutMe.objects.all()
 
     context = {
         'devs': devs,
@@ -16,6 +17,7 @@ def index(request):
         'year': year,
         'acct': acct,
         'yearAcct': yearAcct,
+        'aboutMe':aboutMe,
     }
 
     return render(request, 'website/index.html', context)

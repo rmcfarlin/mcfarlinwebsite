@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Acct, Dev, Cert
+from .models import Acct, Dev, Cert, AboutMe
 
 
 class CertAdmin(admin.ModelAdmin):
@@ -14,3 +14,4 @@ class CertAdmin(admin.ModelAdmin):
 admin.site.register(Acct)
 admin.site.register(Dev)
 admin.site.register(Cert, CertAdmin)
+admin.site.register(AboutMe)
