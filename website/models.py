@@ -26,7 +26,7 @@ class Cert(models.Model):
         ('development', 'development'),
         ('analytics', 'analytics'),
         ('software', 'software'),
-        ('automation', 'automation')
+        ('automation', 'automation'),
         ('development analytics', 'development analytics'),
         ('development software', 'development software'),
         ('development automation', 'development automation'),
